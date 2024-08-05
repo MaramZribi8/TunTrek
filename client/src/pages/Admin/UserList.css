@@ -1,0 +1,177 @@
+
+.user-list h1 {
+    color: #09caa4; /* Updated color */
+    text-align: center;
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  
+  .user-list h2 {
+    text-align: center;
+  
+  }
+  
+  .user-list .search {
+    width: 99%;
+    height: 35px;
+  }
+  
+  .user-list button {
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .user-list  input[type="text"] {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .edit-btn {
+    margin-top: 10px;
+    background-color: #09caa4;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .edit-btn:hover {
+    background-color: #09caa4;
+  }
+  
+  
+  .delete-btn {
+    margin-top: 10px;
+    background-color: #FF4500;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #FF4500;
+  }
+  .delete-btn2 {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds a small space between the icon and the text */
+    background-color: #A0A0A0;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  
+  .button-icon {
+    display: flex; /* Ensures the SVG aligns with the text vertically */
+  }
+  
+  .allbuttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Wrap items if needed */
+    gap: 10px;        /* Spacing between buttons */
+  }
+  
+  .allbuttons button {
+    padding: 8px 16px; /* Uniform padding for all buttons */
+    border: none;
+    color: white;     /* White text for better contrast on colored backgrounds */
+    cursor: pointer;  /* Cursor pointer to indicate clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .allbuttons .select-deselect {
+    background-color: #1E3F5A; /* Green */
+  }
+  
+  .allbuttons .delete-selected {
+    background-color: #1E3F5A; /* Red */
+  }
+  
+  .allbuttons .first-page {
+    background-color: #1E3F5A; /* Indigo */
+  }
+  
+  .allbuttons .previous-page {
+    background-color: #1E3F5A; /* Blue */
+  }
+  
+  .allbuttons .next-page {
+    background-color: #1E3F5A; /* Amber */
+  }
+  
+  .allbuttons .last-page {
+    background-color: #1E3F5A; /* Purple */
+  }
+  
+  .allbuttons button:hover {
+    opacity: 0.8; /* Dim slightly on hover for feedback */
+  }
+  
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .user-table th,
+  .user-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #f2f2f2;
+  }
+  
+  
+  /* ////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  .edit-form {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #9e9d9d;
+    border-radius: 5px;
+  }
+  
+  .edit-form form {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .edit-form label {
+    font-weight: bold;
+  }
+  
+  .edit-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  .edit-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: 1px #333;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .edit-form button:hover {
+    background-color: #206d22;
+  }

@@ -1,0 +1,166 @@
+/* indexPage.css */
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    font-family: "cursive";
+  }
+  
+  .place-card {
+    background-color: #ffffff;
+   
+    overflow: hidden;
+    position: relative; /* Ensure positioning context for absolutely positioned children */
+  }
+  
+  .place-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area of the parent without stretching */
+    top: 0;
+    left: 0;
+    border-top-left-radius: 16px; /* Rounded corners for bottom left */
+    border-top-right-radius: 16px;
+  }
+  
+  .custom-button {
+    display: block;
+    width: 100%;
+    padding: 10px 0; /* Adjust padding as needed */
+    border: none;
+    background-color: #FF4500; /* Button background color */
+    color: #ffffff; /* Button text color */
+    font-size: 16px; /* Adjust font size as needed */
+    text-align: center;
+    cursor: pointer;
+    border-bottom-left-radius: 16px; /* Rounded corners for bottom left */
+    border-bottom-right-radius: 16px; /* Rounded corners for bottom right */
+  }
+  .place-info {
+    padding: 1rem;
+  }
+  
+  .place-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .place-address {
+    font-size: 0.9rem;
+    color: #717171;
+    margin-bottom: 0.5rem;
+  }
+  
+  .place-price {
+    font-weight: 700;
+    color: #060203c6;
+    font-size: 0.7rem;
+  }
+  
+  .place-checkIn {
+    font-size: 0.9rem;
+    color: #717171;
+    margin-bottom: 0.4rem;
+  }
+  
+  .place-checkOut {
+    font-size: 0.9rem;
+    color: #717171;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prev-photo-btn,
+  .next-photo-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #484848;
+    border: none;
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+    z-index: 1;
+    align-items: center;
+  }
+  
+  .prev-photo-btn {
+    left: 1rem;
+    width: 2rem;
+    height: 1.5rem;
+  }
+  
+  .next-photo-btn {
+    right: 1rem;
+    width: 2rem;
+    height: 1.5rem;
+  }
+  
+  .prev-photo-btn:hover,
+  .next-photo-btn:hover {
+    color: #ff385c;
+  }
+  
+ 
+  .place-card.booked {
+    background-color: rgba(0, 0, 0, 0.1); /* Use gray color for booked places */
+    pointer-events: none; /* Disable clicking on booked places */
+  }
+
+  .place-card {
+    position: relative;
+  }
+  
+  .place-card.booked .place-image {
+    filter: grayscale(100%);
+  }
+  
+  .place-card.booked::before {
+    content: "Booked";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent gray background */
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .booked-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .favorite-button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: none; /* Clear any background */
+    border: none; /* No border */
+    outline: none; /* No focus outline */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 10; /* Ensure it's above other content */
+  }
+  
+  .favorite-button svg {
+    fill: #E72929; /* SVG fill color */
+    width: 24px; /* SVG width */
+    height: 24px; /* SVG height */
+  }
+  .heart-icon {
+    transition: transform 0.2s ease-in-out;  /* Smooth transition for the transform property */
+}
+
+.heart-icon:hover {
+    transform: scale(1.5);  /* Increase the size of the icon to 110% when hovered */
+}

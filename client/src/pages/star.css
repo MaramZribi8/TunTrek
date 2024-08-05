@@ -1,0 +1,21 @@
+/* star.css */
+.star-rating-container {
+    display: flex;
+    justify-content: center; /* Centers the stars horizontally */
+    padding: 10px; /* Adds some padding around the stars */
+}
+
+.star-rating-input {
+    display: none; /* Hide the radio input */
+}
+
+.star-rating-label {
+    cursor: pointer;
+    margin-right: 5px; /* Spacing between stars */
+    transition: color 0.2s ease-in-out; /* Smooth color transition */
+}
+
+.star-rating-icon {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out; /* Smooth transition for color change */
+}

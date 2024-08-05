@@ -1,0 +1,35 @@
+.unauthorized-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .unauthorized-header h1 {
+    font-size: 48px;
+    color: #333;
+  }
+  
+  .unauthorized-header p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .unauthorized-content {
+    margin-top: 30px;
+  }
+  
+  .icon-guard-dog {
+    /* Add styles for the SVG or image here */
+    margin: 20px auto;
+  }
+  
+  .unauthorized-actions .button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #09caa4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  

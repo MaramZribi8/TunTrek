@@ -1,0 +1,59 @@
+.blog-section {
+    margin: 40px auto 0; /* Ajoute une marge supérieure pour éloigner la section du header */
+  
+    max-width: 1200px;
+    padding: 40px 20px;
+    text-align: center;
+
+  }
+  
+  .blog-title {
+    font-size: 2rem;
+    color: #09caa4;
+    margin-bottom: 20px;
+  }
+  
+  .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajuste l'espacement entre les articles */
+    gap: 20px; /* Ajoute un espacement entre les articles */
+  }
+  
+  .blog-post {
+    width: 30%; /* Ajuste la largeur des articles */
+    text-align: center; /* Centre le contenu dans chaque article */
+  }
+  
+  .blog-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .blog-post-title {
+    font-size: 1.5rem;
+    color: rgba(52, 210, 157, 0.929);
+    margin-bottom: 10px;
+  }
+  
+  .blog-post-excerpt {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post-button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Ajoute une transition pour le changement de couleur au survol */
+  }
+  
+  .blog-post-button:hover {
+    color: rgb(79, 213, 166);
+  }

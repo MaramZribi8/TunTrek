@@ -1,0 +1,75 @@
+.footer {
+    padding: 1rem; /* Réduction de la taille du padding */
+    background: #f3f6f4 ;
+   
+    color: #204c39;
+    margin-top: 4rem;
+    font-family: "cursive";
+    width: 100%; /* Pour occuper toute la largeur de la page */
+  }
+  
+  .top {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .top i {
+    color: #204c39;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .top i:hover {
+    color: #4be8b3fc;
+  }
+  
+  .top h1 {
+    font-size: 2rem;
+  }
+  
+  .bottom {
+    padding-top: 2rem;
+    display: grid; /* Utilisation de la grille CSS */
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* Répartit les éléments en 4 colonnes égales */
+    gap: 1rem; /* Ajoute un espace entre les colonnes */
+  }
+  
+  .bottom div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alignement des éléments de chaque colonne à gauche */
+  }
+  
+  .bottom h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem; /* Espacement entre chaque titre et ses options */
+  }
+  
+  .bottom a {
+    text-decoration: none;
+    color: #204c39;
+    padding-bottom: 0.4rem;
+    font-size: 1.1rem;
+  }
+  
+  .icons {
+    color: #204c39;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .footer {
+      padding: 4rem 2rem;
+    }
+    .footer i {
+      margin: 1rem 1rem 0 0;
+    }
+    .bottom div {
+      width: 50%;
+    }
+  }
